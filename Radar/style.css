@@ -1,0 +1,587 @@
+html {
+	font-size: 16px;
+	font-family: "albert-regular";
+}
+body {
+	margin: 0;
+	padding: 0;
+	body {
+		font-family: 'Albert-bold', sans-serif;
+    
+	}
+}
+h1 {
+	font-size: 2.5rem;
+	font-family: "albert-bold";
+}
+/* Fonts */
+@font-face {
+	font-family: "albert-bold";
+	src: url(fonts/AlbertSans-Bold.ttf);
+}
+@font-face {
+	font-family: "albert-regular";
+	src: url(fonts/AlbertSans-Regular.ttf);
+}
+/* styling af header */
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+	height: 100px;
+	background-color: #0B2147;
+	color: white;
+}
+/* styling af logo */
+.logo img {
+	height: 100px;
+	width: auto;
+}
+.logo:hover {
+    transform: scale(1.1); 
+    opacity: 0.5; 
+  }
+  
+/* styling af navigation og burger menu*/
+.navbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.burger-toggle {
+	display: none;
+}
+.menu {
+	list-style: none;
+	padding: 0;
+	margin: 20px 0;
+	display: none;
+	flex-direction: column;
+	position: absolute;
+	top: 50px;
+	left: 0;
+	width: 100%;
+	background-color: #0B2147;
+	justify-content: center;
+	align-items: center;
+}
+.menu li {
+	margin: 0;
+}
+.menu li a {
+	color: white;
+	text-decoration: none;
+	padding: 15px 20px;
+	display: block;
+	font-size: 1.5rem;
+	font-family: 'albert-bold', Arial, Helvetica, sans-serif;
+}
+.burger-menu {
+	display: block;
+	cursor: pointer;
+}
+.burger-menu .line {
+	width: 30px;
+	height: 3px;
+	background-color: white;
+	margin: 4px 0;
+}
+.burger-toggle:checked + .burger-menu + .menu {
+	display: flex;
+	z-index: 1;
+}
+/* styling af footer */
+/* Skjul logo som standard */
+footer {
+	background-color: #0B2147;
+	color: white;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	padding: 1.5rem 1rem;
+	gap: 2rem;
+	font-family: "albert-bold";
+}
+.footer-section{
+	flex: 1;
+	padding: 15px;
+}
+h3 {
+	font-size: 1rem;
+	padding: 1rem 0 0 1rem;
+}
+.footer-section h3 {
+	font-size: 1rem;
+	padding: 0;
+}
+.ikoner img {
+	width: 1.5rem;
+	padding: 0.5rem;
+    width: 40px; 
+    height: auto;
+    transition: transform 0.3s ease; /
+}
+
+.ikoner a:hover img {
+    transform: scale(1.1); 
+}
+.footer-section img{
+	max-width: 150px;
+}
+.footer-section p {
+	font-size: 1.0rem;
+
+}
+.footer-section a{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.footer-section a:hover {
+    text-decoration: underline; 
+  }
+
+.footer-section {
+	padding: 1.5rem 0 0.5rem 1rem;
+	font-family: 'Inter_18pt-Light', Arial, Helvetica, sans-serif;
+}
+/* styling af formular */
+.kontaktformular{
+	max-width: 600px;
+	margin: 20px auto;
+	padding: 10px;
+	font-family: "albert-regular";
+}
+.kontaktformular h1{
+	font-size: 30px;
+	margin-bottom: 20px;
+	margin-top: 40px;
+}
+.kontaktformular form {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	height: 500px;
+}
+.kontaktformular input,.kontaktformular textarea,.kontaktformular button {
+	width: 90%;
+	padding: 10px;
+	font-size: 17px;
+	border: 0px solid;
+	border-radius: 0px;
+	background-color: #83B2F9;
+}
+.kontaktformular button {
+	background-color: #83B2F9;
+	color: #ffffff;
+	text-align: left;
+	width: 250px;
+}
+
+/* styling af knapper */
+.button {
+	display: inline-block;
+	padding: 0.75rem 1.5rem;
+	background-color: #001a40;
+	color: white;
+	text-decoration: none;
+	border-radius: 0px;
+	font-size: 1rem;
+	font-family: "albert-bold";
+}
+.button:hover {
+	background-color: #003366;
+}
+/* opsætning af menupunkter og forside */
+.oplevfestival {
+	text-align: center;
+	background-color: white;
+	padding: 1rem;
+	border-radius: 8px;
+	max-width: 500px;
+	flex-direction: column;
+	margin: 0 auto;
+}
+.festivaltekst{
+	width: 100%;
+	margin-bottom: 2rem;
+	line-height: 1.5;
+	font-size: 1rem;
+}
+.festivalbilleder{
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.respfestivalbillede {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+.hvorbilleder-child {
+    gap: 20px;
+    display: flex;
+        flex-direction: row;
+        justify-content: center;
+  }
+  
+  .hvorbilleder-child img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .hvorbilleder {
+    text-align: center;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    max-width: 500px;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+.madogdrikkeliste ul {
+	display: inline-block;
+	text-align: left;
+	padding: 0;
+	margin: 0;
+	list-style-position: inside;
+}
+.madogdrikkeliste ul ul {
+	padding-left: 20px;
+}
+.madogdrikkeliste {
+	text-align: center;
+}
+.begivenheder {
+	text-align: center;
+	background-color: white;
+	padding: 1rem;
+	border-radius: 8px;
+	max-width: 500px;
+	flex-direction: column;
+	margin: 0 auto;
+}
+.begivenhedtekst{
+	width: 100%;
+	margin-bottom: 2rem;
+	line-height: 1.5;
+	font-size: 1rem;
+}
+.voresteam {
+	text-align: center;
+	background-color: white;
+	padding: 1rem;
+	border-radius: 8px;
+}
+.medlemafradar {
+	text-align: center;
+	background-color: white;
+	padding: 1rem;
+	border-radius: 8px;
+	max-width: 500px;
+	flex-direction: column;
+	margin: 0 auto;
+}
+
+.medlemtekst{
+	width: 100%;
+	margin-bottom: 2rem;
+	line-height: 1.5;
+	font-size: 1.1rem;
+}
+.beligenhed {
+	text-align: center;
+	background-color: white;
+	padding: 1rem;
+	border-radius: 8px;
+	max-width: 800px;
+	flex-direction: column;
+	margin: 0 auto;
+}
+.beligenhedtekst{
+	width: 100%;
+	margin-bottom: 2rem;
+	line-height: 1.5;
+	font-size: 1.1rem;
+}
+.blivfrivillig {
+	text-align: center;
+	background-color: white;
+	padding: 1rem;
+	border-radius: 8px;
+	flex-direction: column;
+	margin: 0 auto;
+	max-width: 500px;
+}
+
+.frivillig {
+	text-align: center;
+}
+
+.frivilligtekst{
+	width: 100%;
+	margin-bottom: 2rem;
+	line-height: 1.5;
+	font-size: 1.1rem;
+}
+.frivillig2 {
+	display: none;
+}
+.forside {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 500px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+
+
+.forsidetekst {
+	width: 100%;
+	margin-bottom: 2rem;
+	line-height: 1.5;
+	font-size: 1rem;
+}
+.blivmedlem {
+	text-align: center;
+	background-color: white;
+	padding: 1rem;
+	border-radius: 8px;
+	max-width: 500px;
+	flex-direction: column;
+	margin: 0 auto;
+}
+.medlemtekst {
+	width: 100%;
+	margin-bottom: 2rem;
+	line-height: 1.5;
+	font-size: 1.1rem;
+}
+.kommende-child {
+	text-align: center;
+	background-color: white;
+	padding: 1rem;
+    max-width: 500px;
+	border-radius: 8px;
+	flex-direction: column;
+	margin: 0 auto;
+}
+
+
+/* fordelelister */
+.fordele {
+    text-align: center;
+  }
+  
+  .fordele ul {
+    list-style-position: inside; 
+    display: inline-block; 
+    text-align: left;
+    padding: 2; 
+    margin: 3 auto;
+  }
+  
+  .fordele li {
+    margin: 8px 0; 
+  }
+
+/* Team sektion */
+.team {
+	text-align: center;
+	background-color: #87CEFA;
+	padding: 2rem 1rem;
+	border-radius: 8px;
+}
+.team h1 {
+	font-size: 2rem;
+	margin-bottom: 2rem;
+}
+.team-list {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+/* Hvert medlem */
+.team-list li {
+	border-radius: 4px;
+	padding: 1rem;
+	text-align: center;
+}
+.team-list img {
+	width: 160px;
+	height: 200px;
+	margin-bottom: 1rem;
+}
+.team-list h2 {
+	font-size: 1.2rem;
+	margin-bottom: 0.5rem;
+}
+.team-list p {
+	font-size: 1rem;
+	margin-bottom: 0.5rem;
+}
+.team-list a {
+	color: #001a40;
+	text-decoration: none;
+	font-weight: bold;
+}
+.team-list a:hover {
+	text-decoration: underline;
+}
+/** COMPUTER VERSION **/
+@media (min-width: 768px) {
+	.content-mobil{
+		display: none;
+	}
+	.footer-logo img {
+		max-width: 150px;
+		height: auto;
+	}
+	.footer-logo {
+		text-align: center;
+		margin-bottom: 2rem;
+	}
+    
+	.team-list {
+        display: grid;
+        grid-template-columns: 1fr; 
+        gap: 20px; 
+	}
+	.team-list li {
+		flex: 1 1 calc(50% - 2rem);
+		max-width: 200px;
+	}
+	.team-list img {
+		width: 160px;
+		height: 200px;
+	}
+	.voresteam {
+		text-align: center;
+		background-color: white;
+		padding: 1rem;
+		border-radius: 8px;
+		max-width: 500px;
+		flex-direction: column;
+		margin: 0 auto;
+	}
+	.festivalbilleder{
+		flex-direction: row;
+	}
+
+    .kommende-child{
+        display: flex;
+        align-items: center;
+        max-width: inherit;
+        flex-direction: row;
+    }
+
+	.respfestivalbillede {
+		width: calc(50% - 10px);
+	}
+	.content-computer section.blivfrivillig{
+		display: flex;
+		flex-direction: row;
+		max-width: 100% !important;
+	}
+	.content-computer section.medlemafradar{
+		display: flex;
+		flex-direction: row;
+		max-width: 100% !important;
+	}
+
+    .content-computer section.oplevfestival{
+		display: flex;
+		flex-direction: row;
+		max-width: 100% !important;
+	}
+	.content-computer section.begivenheder{
+		display: flex;
+		flex-direction: row;
+		max-width: 100% !important;
+    }
+    .content-computer section.beligenhed{
+		display: flex;
+		flex-direction: row;
+		max-width: 100% !important;
+    }
+
+    .content-computer section.kommende{
+		max-width: 100% !important;
+    }
+    .kommende h1{
+    padding-left: 20px;
+    }
+
+	.content-computer .venstre{
+		width: 50%;
+	}
+    .venstre img {
+        height: 50vh;
+        width: 100%;
+        object-fit: cover;
+    }
+	.content-computer .hoejre{
+		width: 50%;
+		padding: 20px;
+
+	}
+    .hoejre img {
+        height: 50vh;
+        width: 100%;
+        object-fit: cover;
+    }
+    /* Team sektion */
+    .team-list {
+        grid-template-columns: repeat(4, 1fr); 
+      }
+
+    /* BURGERMENU */
+	.burger-menu {
+		display: none;
+	}
+	.menu {
+		display: flex;
+		flex-direction: row;
+		position: static;
+		background-color: transparent;
+	}
+	.menu li {
+		margin: 0 10px;
+	}
+
+}
+/** MOBIL VERSION **/
+@media (max-width: 767px) {
+	.content-computer{
+		display: none;
+	}
+	#footer-logo {
+		display: none;
+	}
+    .team-list {
+        grid-template-columns: repeat(2, 1fr); 
+      }
+      .content-mobil .kommende-child {
+        text-align: center;
+        background-color: white;
+        padding: 1rem;
+        border-radius: 8px;
+        max-width: 500px;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+   
+
+      .hvorbilleder-child img {
+        width: 50%;
+      }
+    
+      .forside img{
+        max-width: 450px;
+      }
+}
+
